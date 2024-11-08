@@ -48,7 +48,7 @@ func convertRespToPrompts(resp *genai.GenerateContentResponse) []Prompt {
 							log.Fatal(err)
 						}
 						prompts = append(prompts, prompt)
-					} else if strings.HasPrefix(string(v), "{") {
+					} else if strings.HasPrefix(string(v), "[") {
 						// try to unmarshal it as JSON array
 						err := json.Unmarshal([]byte(v), &prompts)
 						if err != nil {
