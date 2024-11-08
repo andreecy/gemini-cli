@@ -1,4 +1,4 @@
-module gmn-cli
+module gmn
 
 go 1.21
 
@@ -6,10 +6,12 @@ toolchain go1.22.6
 
 require (
 	github.com/google/generative-ai-go v0.17.0
+	github.com/manifoldco/promptui v0.9.0
 	google.golang.org/api v0.186.0
 )
 
 require (
+	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect

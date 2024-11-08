@@ -23,11 +23,11 @@ func main() {
 				},
 			},
 			{
-				Name:  "suggest",
-				Usage: "Suggest how to do something in terminal",
+				Name:  "howto",
+				Usage: "General-purpose how to do something in terminal",
 				Action: func(cCtx *cli.Context) error {
 					prompt := strings.Join(cCtx.Args().Slice(), " ")
-					startChat(prompt)
+					howto(prompt)
 					return nil
 				},
 			},
